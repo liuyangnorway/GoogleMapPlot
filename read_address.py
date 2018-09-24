@@ -6,11 +6,9 @@ Created on Sun Sep 23 16:11:45 2018
 """
 
 from geopy.geocoders import Nominatim
-import os
 import pandas as pd
-from googleearthplotLiu import  googleearthplot
+from googleearthplot import googleearthplot
 
-os.chdir(r'D:\jliu_20170524\Fred')
 df=pd.read_excel('Klasseliste 1c 2018_2019.xlsx')
 geolocator = Nominatim(user_agent='Mozilla/5.0 (Windows NT 6.2; WOW64; rv:21.0) Gecko/20100101 Firefox/21.0')
 
